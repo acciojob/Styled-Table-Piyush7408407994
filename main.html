@@ -1,15 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Table - COVID Stats</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 0 auto;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    thead {
+      background-color: #2c3e50;
+      color: white;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tbody tr:hover {
+      background-color: #e6f7ff;
+    }
+
+    th {
+      text-transform: uppercase;
+    }
+  </style>
 </head>
 <body>
-    <!-- add table here -->
 
-        
+  <h2>COVID-19 Statistics (Sample Data)</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>Total Cases</th>
+        <th>Recovered</th>
+        <th>Deaths</th>
+        <th>Active Cases</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>USA</td>
+        <td>104,590,124</td>
+        <td>101,234,567</td>
+        <td>1,123,456</td>
+        <td>2,232,101</td>
+      </tr>
+      <tr>
+        <td>India</td>
+        <td>45,632,789</td>
+        <td>44,567,890</td>
+        <td>531,234</td>
+        <td>533,665</td>
+      </tr>
+      <tr>
+        <td>Brazil</td>
+        <td>38,123,456</td>
+        <td>36,987,654</td>
+        <td>700,123</td>
+        <td>435,679</td>
+      </tr>
+      <tr>
+        <td>UK</td>
+        <td>29,456,321</td>
+        <td>28,123,456</td>
+        <td>453,678</td>
+        <td>879,187</td>
+      </tr>
+    </tbody>
+  </table>
+
 </body>
 </html>
